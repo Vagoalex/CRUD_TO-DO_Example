@@ -1,0 +1,62 @@
+﻿.v-theme--dark {
+  .my-table {
+	box-shadow: 0 4px 8px rgb(72, 169, 166);
+	border-radius: 8px;
+	overflow: hidden;
+
+	thead {
+	  background: rgba(72, 169, 166, 0.2);
+	}
+
+	th {
+	  height: 64px;
+	  padding: 0 8px !important;
+	  font-size: 1rem !important;
+
+	  &:first-child {
+		padding-left: 8px !important;
+	  }
+
+	  &:last-child {
+		padding-right: 8px !important;
+	  }
+
+	  span {
+		display: inline-block;
+		margin-top: 20px;
+		margin-bottom: 20px;
+	  }
+	}
+
+	.v-table__wrapper > table > tbody > tr > td {
+	}
+
+	&.clickable-rows tr {
+	  cursor: pointer;
+	}
+	
+	th, td {
+	  vertical-align: middle;
+	}
+  }
+
+  .colored-table {
+	tbody tr:nth-child(even) {
+	  background: var(--v-white-lighten2);
+	}
+  }
+
+  .colored-table-dark {
+	tbody tr {
+	  &:hover {
+		background: rgba(72, 169, 166, 0.1);
+	  }
+	}
+  }
+
+  &.my-table-hide-footer {
+	.v-data-table-footer {
+	  display: none;
+	}
+  }
+}

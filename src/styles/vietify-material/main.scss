@@ -1,0 +1,42 @@
+﻿@import '@styles/vietify-material/dark/common';
+@import '@styles/vietify-material/dark/buttons';
+@import '@styles/vietify-material/dark/table';
+
+html {
+	overflow-y: auto;
+}
+
+.v-application {
+	font-family: "Arial", sans-serif !important;
+	font-size: 16px;
+
+	.col {
+		min-height: unset !important;
+	}
+
+	label {
+		margin-bottom: 0 !important;
+	}
+}
+
+.my-scrollbar {
+	&::-webkit-scrollbar {
+		width: 10px;
+	}
+
+	&::-webkit-scrollbar-track {
+		background: var(--v-white-lighten2);
+	}
+
+	&::-webkit-scrollbar-thumb {
+		background: var(--v-white-lighten3);
+		border-radius: 8px;
+	}
+
+	&::-webkit-scrollbar-thumb:hover {
+		background: var(--v-white-lighten4);
+	}
+}
+
+.my-text-field {
+}

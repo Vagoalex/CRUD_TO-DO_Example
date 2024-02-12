@@ -1,0 +1,26 @@
+﻿.v-theme--dark {
+  .my-btn {
+	&.v-btn--disabled {
+	  background: rgb(var(--v-theme-grey-lighten-3)) !important;
+	  color: rgb(var(--v-theme-grey-darken-2)) !important;
+	  opacity: 0.7;
+	}
+
+	&--full-width {
+	  width: 100% !important;
+	}
+  }
+
+  .my-chip-group {
+	.v-slide-group__content {
+	  gap: 16px;
+	}
+
+	.v-chip {
+	  transition: all 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+	  border-radius: 20px;
+	  margin: 0;
+	  padding: 18px 24px;
+	}
+  }
+}
